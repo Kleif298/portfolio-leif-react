@@ -1,4 +1,3 @@
-import bildLeifAngle from "../assets/bild-leif-angle.jpg";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
 
 const about = () => {
@@ -22,7 +21,7 @@ const about = () => {
                 </a>
             </div>
             <div className="image-box">
-                <img src={bildLeifAngle} alt="Leif" />
+                <img src="/bild-leif-angle.jpg" alt="Leif" />
             </div>
         </div>
     )

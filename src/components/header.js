@@ -3,7 +3,7 @@ const Header = () => {
     <header>
         <div className="edge-mini-bar"></div>
         <div className="edge-content">
-            <img src={require('../assets/sunrise-logo-grey.png')} alt="sunrise-logo-grey" />
+            <img src="/sunrise-logo-grey.png" alt="sunrise-logo-grey" />
             <nav>
                 <a href="#">Home</a>
                 <a href="#about">About Me</a>
