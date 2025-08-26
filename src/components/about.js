@@ -10,14 +10,17 @@ const about = () => {
                 Thank you for visiting my portfolio!</p>
             </div>
             <div className="social-links">
-                <a href="https://github.com/Kleif298" target="_blank" rel="noopener noreferrer">
-                    <FaGithub size={40} color="white" />
+                <a href="https://github.com/Kleif298" target="_blank" rel="noopener noreferrer" className="social-link">
+                    <span className="link-text">GitHub</span>
+                    <span className="link-icon"><FaGithub size={40} color="white" /></span>
                 </a>
-                <a href="https://www.linkedin.com/in/leif-fieger-96aa1b2aa/" target="_blank" rel="noopener noreferrer">
-                    <FaLinkedin size={40} color="white" />
+                <a href="https://www.linkedin.com/in/leif-fieger-96aa1b2aa/" target="_blank" rel="noopener noreferrer" className="social-link">
+                    <span className="link-text">LinkedIn</span>
+                    <span className="link-icon"><FaLinkedin size={40} color="white" /></span>
                 </a>           
-                <a href="mailto:leif.fieger@gmail.com">
-                    <FaEnvelope size={40} color="white" /> 
+                <a href="mailto:leif.fieger@gmail.com" className="social-link">
+                    <span className="link-text">Email</span>
+                    <span className="link-icon"><FaEnvelope size={40} color="white" /></span>
                 </a>
             </div>
             <div className="image-box">

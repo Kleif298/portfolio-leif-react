@@ -224,7 +224,7 @@ header .edge-content nav a {
   object-fit: cover;
 }
 
-.social-links{
+.social-links {
   display: flex;
   flex-flow: row nowrap;
   height: auto;
@@ -232,10 +232,46 @@ header .edge-content nav a {
   gap: 20px;
 }
 
-#about .social-links{
+#about .social-links {
   position: absolute;
   bottom: 20px;
   right: 150px;
+}
+
+.social-link {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.social-link .link-text {
+  display: inline-block;
+  font-size: 1.1rem;
+}
+
+.social-link .link-icon {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social-link:hover .link-text {
+  display: none;
+}
+
+.social-link:hover .link-icon {
+  display: block;
+}
+
+.social-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /*mywork related*/
