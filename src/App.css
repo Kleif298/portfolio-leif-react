@@ -1,38 +1,322 @@
-.App {
-  text-align: center;
+/*General*/
+
+html {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root {
+  height : 100%;
+  width: 100%;
+  margin: 0 0;
+  padding: 0;
+  align-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/*Pages*/
+/*Keine Pages, single Page*/
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*Elements, General Classes*/
+
+.background {
+  width: 100vw;
+  height: 800px;
+  background-color: #9A998E;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/*Components*/
+
+#about, #mywork, #contact {
+  scroll-margin-top: 80px;
+}
+/*Header and Footer related*/
+
+header, footer {
+  max-width: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 80px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 10px 20px #9f261d83;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background-color: #da291c;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  box-shadow: 0 -10px 20px #9f261d83;
+}
+
+.edge-mini-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #9F261D;
+}
+
+footer .edge-mini-bar{
+  width: 100%;
+  height: 40px;
+  background-color: #9F261D;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .social-links{
+  margin-left: 20px;
+
+}
+
+header .edge-content, footer .edge-content {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #da291c;
+}
+
+footer .edge-content{
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+
+footer p{
+  margin: 0;
+  padding: 0 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+header .edge-content img{
+  height: 40px;
+  width: auto;
+  margin: 0 80px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header .edge-content nav {
+  display: flex;
+  flex: 1;
+  max-width: 600px;
+  justify-content: space-around;
+  margin-right: 30px;
 }
+
+header .edge-content nav a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*Hero related*/
+
+#hero {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  background-color: #f0f0f0;
+}
+
+#hero .hero-title {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 50px;
+
+}
+
+#hero .hero-title h1 {
+  top: 100px;
+  left: 20px;
+  font-size: 4rem;
+  margin: 15px 0;
+  color: #da291c;
+}
+
+#hero .hero-title p {
+  top: 100px;
+  left: 20px;
+  margin: 0;
+  color: #333333;
+  font-size: 1.2rem;
+}
+
+#hero .text-box {
+  height: 280px;
+  width: 220px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 4px 4px rgba(0,0,0,0.25);
+  margin: auto 120px;
+  color: #333333;
+  font-size: 1.2rem;
+}
+
+#hero .text-box p {
+  padding: 15px;
+
+  margin: 0;
+}
+
+/*About related*/
+
+#about {
+  width: 100%;
+  height: 400px;
+  background-color: #333333;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  box-shadow: 0 -16px 24px rgb(51, 51, 51, 50%),
+              0 16px 24px rgb(51, 51, 51, 50%);
+}
+
+#about .title {
+  position: absolute;
+  top: 40px;
+  right: 150px;
+}
+
+#about .text-box {
+  width: 620px;
+  height: 250px;
+  position: absolute;
+  top: 140px;
+  right: 120px;
+}
+
+#about .image-box{
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: 50px;
+  left: 60px;
+}
+
+#about .image-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.social-links{
+  display: flex;
+  flex-flow: row nowrap;
+  height: auto;
+  width: auto;
+  gap: 20px;
+}
+
+#about .social-links{
+  position: absolute;
+  bottom: 20px;
+  right: 150px;
+}
+
+/*mywork related*/
+#mywork {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#mywork .main-container {
+  width: 800px;
+  height: 600px;
+  margin: 40px auto;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  box-shadow: inline 0 0 10px 20px rgba(134, 134, 134, 0.425);
+}
+
+#mywork h2 {
+  padding: 20px 0 0 50px;
+  margin-bottom: 0;
+  color: #333333;
+}
+
+
+/*Projects display (by GitHub API)*/
+.sub-container{
+  display: flex;
+  flex-flow: row wrap;
+  padding: 40px;
+  gap: 15px;
+}
+
+.project-card{
+  background-color: #c98e8959;
+  height: 170px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(207, 174, 174);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(207, 174, 174, 0.452);
+}
+
+.project-card .title {
+  font-size: 1.5rem;
+  color: #333333;
+  margin: 5px 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.project-card .description {
+  font-style: italic;
+  font-size: 1rem;
+  color: #666666;
+  margin: 10px;
+  overflow: hidden;
+  display: block;
+  word-wrap: break-word;
+}
+
+.tech-stack .sub-container{
+  gap: 8px;
+}
+
+.tech-item{
+  background-color:  #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+}
+
+
+hr {
+  margin: 0;
+  border: none;
+  border-top: 1px solid rgb(207, 174, 174);
+}
+
+/*tech-stack*/
