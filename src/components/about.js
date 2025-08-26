@@ -21,7 +21,7 @@ const about = () => {
                 </a>
             </div>
             <div className="image-box">
-                <img src="/bild-leif-angle.jpg" alt="Leif" />
+                <img src={`%PUBLIC_URL%/bild-leif-angle.jpg`} alt="Leif" />
             </div>
         </div>
     )
